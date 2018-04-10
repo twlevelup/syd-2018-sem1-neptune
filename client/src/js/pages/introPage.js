@@ -6,6 +6,10 @@ class IntroPage extends BasePage {
     return compiledTemplate();
   }
 
+  topButtonEvent() {
+    this.navigate('/');
+  }
+
   bottomButtonEvent() {
     this.navigate('details');
   }

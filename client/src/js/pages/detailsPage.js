@@ -5,6 +5,10 @@ class DetailsPage extends BasePage {
   template() {
     return compiledTemplate();
   }
+
+  topButtonEvent() {
+    this.navigate('/');
+  }
 }
 
 module.exports = DetailsPage;

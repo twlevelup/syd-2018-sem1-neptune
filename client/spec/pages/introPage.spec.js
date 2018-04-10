@@ -15,6 +15,20 @@ describe('The Intro Page', () => {
     });
   });
 
+  describe('#topButtonEvent', () => {
+    it('should take the user to the home page', () => {
+      const props = {
+        navigate: () => { },
+      };
+
+      const page = new IntroPage(props);
+      spyOn(page, 'navigate');
+
+      page.topButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('/');
+    });
+  });
+
   describe('#bottomButtonEvent', () => {
     it('should take the user to the details page', () => {
       const props = {
