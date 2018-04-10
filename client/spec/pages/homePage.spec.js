@@ -15,16 +15,12 @@ describe('HomePage', () => {
   });
 
   describe('#leftButtonEvent', () => {
-    it('should take the user to the demo page', () => {
-      const props = {
-        navigate: () => { },
-      };
-
-      const page = new HomePage(props);
-      spyOn(page, 'navigate');
+    it('scrolls page down', () => {
+      const page = new HomePage({ watchFace });
 
       page.leftButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('demo');
+
+      expect(watchFace.scrollTop).toEqual(40);
     });
   });
 
@@ -42,14 +38,16 @@ describe('HomePage', () => {
   });
 
   describe('#bottomButtonEvent', () => {
-    it('scrolls page down', () => {
+    it('should take the user to the intro page', () => {
+      const props = {
+        navigate: () => { },
+      };
 
-      const page = new HomePage({ watchFace });
+      const page = new HomePage(props);
+      spyOn(page, 'navigate');
 
       page.bottomButtonEvent();
-
-      expect(watchFace.scrollTop).toEqual(40);
-
+      expect(page.navigate).toHaveBeenCalledWith('intro');
     });
   });
 

@@ -14,7 +14,7 @@ class HomePage extends BasePage {
   }
 
   leftButtonEvent() {
-    this.navigate('demo');
+    this.watchFace.scrollTop += 40;
   }
 
   rightButtonEvent() {
@@ -26,7 +26,7 @@ class HomePage extends BasePage {
   }
 
   bottomButtonEvent() {
-    this.watchFace.scrollTop += 40;
+    this.navigate('intro');
   }
 }
 
