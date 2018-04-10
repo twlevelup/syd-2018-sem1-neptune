@@ -9,6 +9,9 @@ class HomePage extends BasePage {
   template() {
     const context = {
       time: time,
+      rightButtonLabel: 'Next',
+      bottomButtonLabel: 'My Details',
+      leftButtonLabel: 'Location',
     };
     return compiledTemplate(context);
   }

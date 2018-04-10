@@ -17,9 +17,30 @@ describe("HomePage", () => {
     });
   });
 
+<<<<<<< HEAD
 
   describe("#topButtonEvent", () => {
     it("goes to alert page", () => {
+=======
+  describe('#buttonLabels', () => {
+    it('should say Next for right button', () => {
+      const page = new HomePage();
+      expect(page.template()).toContain("<div>Next</div>");
+    });
+    it('should say My Details for bottom button', () => {
+      const page = new HomePage();
+      expect(page.template()).toContain("<div>My Details</div>");
+    });
+    it('should say Location for left button', () => {
+      const page = new HomePage();
+      expect(page.template()).toContain("<div>Location</div>");
+    });
+  });
+  
+
+  describe('#leftButtonEvent', () => {
+    it('goes to location page', () => {
+>>>>>>> Katrina/Darshan Adding homeScreen button labels
       const props = {
         navigate: () => {}
       };
