@@ -29,7 +29,7 @@ describe("HomePage", () => {
     });
     it('should say My Details for bottom button', () => {
       const page = new HomePage();
-      expect(page.template()).toContain("<div>My Details</div>");
+      expect(page.template()).toContain("<div class=\"bottom-button\">My Details</div>");
     });
     it('should say Location for left button', () => {
       const page = new HomePage();
