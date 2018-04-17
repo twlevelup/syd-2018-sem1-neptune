@@ -3,20 +3,13 @@ const compiledTemplate = require('../../templates/locationPage.hbs')
 
 class LocationPage extends BasePage {
 
-    constructor(props = {}) {
-        super(props);
-        this.contacts = props.contacts || [
-          { name: 'Sam', phoneNumber: '0431 123 333' },
-          { name: 'Sinan', phoneNumber: '0431 222 222' },
-          { name: 'Jafari', phoneNumber: '0431 333 333' },
-        ];
-      }
+    // constructor(props = {}) {
+    //     super(props);
+
+    //   }
     
       template() {
-        const context = {
-          contacts: this.contacts,
-        };
-        return compiledTemplate(context);
+        return compiledTemplate();
       }
     
       rightButtonEvent() {

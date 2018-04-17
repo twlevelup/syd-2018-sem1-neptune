@@ -9,6 +9,7 @@ describe('routes', () => {
     expect(routes['404']).toBeDefined();
     expect(routes['intro']).toBeDefined();
     expect(routes['details']).toBeDefined();
+    expect(routes['location']).toBeDefined();
   });
 
 });
