@@ -11,16 +11,6 @@ describe('ContactsPage', () => {
       const page = new LocationPage();
       expect(page.template()).toContain("<h1>Current Location</h1>");
     });
-
-    // it('should have a template with current location', () => {
-    //   const location = [
-    //     {name: 'hi', phoneNumber: '1234'},
-    //   ];
-    //   const props = { contacts }
-    //   const page = new ContactsPage(props);
-    //   expect(page.template()).toContain("<span>Name: hi</span>");
-    //   expect(page.template()).toContain("<span>Phone: 1234</span>");
-    // });
   });
 
   describe('#rightButtonEvent', () => {
