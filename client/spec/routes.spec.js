@@ -12,6 +12,7 @@ describe('routes', () => {
     expect(routes['medicalHistory']).toBeDefined();
     expect(routes['emergencyContacts']).toBeDefined();
     expect(routes['emergencyMore']).toBeDefined();
+    expect(routes['location']).toBeDefined();
   });
 
 });

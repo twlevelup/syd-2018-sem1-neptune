@@ -15,12 +15,15 @@ describe('HomePage', () => {
   });
 
   describe('#leftButtonEvent', () => {
-    it('scrolls page down', () => {
-      const page = new HomePage({ watchFace });
+    it('goes to location page', () => {
+      const props = {
+        navigate: () => { },
+      };
+      const page = new HomePage(props);
+      spyOn(page, 'navigate');
 
       page.leftButtonEvent();
-
-      expect(watchFace.scrollTop).toEqual(40);
+      expect(page.navigate).toHaveBeenCalledWith('location');
     });
   });
 

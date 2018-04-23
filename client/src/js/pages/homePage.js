@@ -14,7 +14,7 @@ class HomePage extends BasePage {
   }
 
   leftButtonEvent() {
-    this.watchFace.scrollTop += 40;
+    this.navigate('location');
   }
 
   rightButtonEvent() {
