@@ -1,3 +1,4 @@
+require('../../styles/pages/intro.scss');
 const BasePage = require('watch-framework').BasePage;
 const compiledTemplate = require('../../templates/introPage.hbs')
 
@@ -12,6 +13,10 @@ class IntroPage extends BasePage {
 
   bottomButtonEvent() {
     this.navigate('details');
+  }
+
+  rightButtonEvent() {
+    this.navigate('emergencyContacts');
   }
 }
 

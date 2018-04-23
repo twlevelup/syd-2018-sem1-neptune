@@ -1,0 +1,27 @@
+.detailsContainer {
+    position: relative;
+}
+
+.detailsMiddle {
+    position: absolute;
+    justify-self: center;
+    top: 8vh;
+    left: 5vw;
+}
+
+.detailsTop {
+    position: absolute;
+    justify-self: center;
+    text-align: center;
+    top: -2vh;
+    left: 12vw;
+}
+
+.detailsRight {
+    position: absolute;
+    transform: rotate(-90deg);
+    justify-self: center;
+    text-align: center;
+    top: 14vh;
+    left: 28vw;
+}

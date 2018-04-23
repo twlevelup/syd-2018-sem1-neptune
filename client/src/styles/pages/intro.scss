@@ -1,0 +1,35 @@
+.introContainer {
+    position: relative;
+}
+
+.introMiddle {
+    position: absolute;
+    justify-self: center;
+    top: 8vh;
+    left: 3vw;
+}
+
+.introTop {
+    position: absolute;
+    justify-self: center;
+    text-align: center;
+    top: -3vh;
+    left: 16vw;
+}
+
+.introRight {
+    position: absolute;
+    transform: rotate(-90deg);
+    justify-self: center;
+    text-align: center;
+    top: 13vh;
+    left: 29vw;
+}
+
+.introBottom {
+    position: absolute;
+    justify-self: center;
+    text-align: center;
+    top: 32vh;
+    left: 13vw;
+}

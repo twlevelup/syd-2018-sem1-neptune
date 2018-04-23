@@ -1,0 +1,44 @@
+.emergencyContactsContainer {
+    position: relative;
+}
+
+.middle {
+    position: absolute;
+    justify-self: center;
+    top: 8vh;
+    left: 5vw;
+}
+
+.top-btn {
+    position: absolute;
+    justify-self: center;
+    text-align: center;
+    top: -2vh;
+    left: 12vw;
+}
+
+.right-btn {
+    position: absolute;
+    transform: rotate(-90deg);
+    justify-self: center;
+    text-align: center;
+    top: 14vh;
+    left: 30vw;
+}
+
+.bottom-btn {
+    position: absolute;
+    justify-self: center;
+    text-align: center;
+    top: 32vh;
+    left: 8vw;
+}
+
+.left-btn {
+    position: absolute;
+    transform: rotate(90deg);
+    justify-self: center;
+    text-align: center;
+    top: 14vh;
+    left: -4vw;
+}
