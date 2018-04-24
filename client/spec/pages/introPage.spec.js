@@ -11,7 +11,8 @@ describe('The Intro Page', () => {
     it('should contain the correct text', () => {
       const page = new IntroPage();
       expect(page.template()).toContain(`Hi Carl! Everything is okay.`);
-      expect(page.template()).toContain(`You are just experiencing the onset of alzheimer's`);
+      expect(page.template()).toContain(`You are just experiencing`);
+      expect(page.template()).toContain(`the onset of alzheimer's`);
     });
   });
 

@@ -10,13 +10,11 @@ describe('The Details Page', () => {
   describe('#template', () => {
     it('should contain the correct text', () => {
       const page = new DetailsPage();
-      expect(page.template()).toContain(`Name: Carl`);
-      expect(page.template()).toContain(`Add: 123 Pet Street`);
-      expect(page.template()).toContain(`D.O.B.: 14/02/1957`);
-      expect(page.template()).toContain(`Emergency`);
-      expect(page.template()).toContain(`Name: Bruce Wayne`);
-      expect(page.template()).toContain(`Add: 1007 Mountain Drive, Gotham`);
-      expect(page.template()).toContain(`Number: SOMEBODY-CALL-911`);
+      expect(page.template()).toContain(`Your Name: Carl`);
+      expect(page.template()).toContain(`Your D.O.B.: 14/02/1957`);
+      expect(page.template()).toContain(`Your Address: 123 Pet Street`);
+      expect(page.template()).toContain(`Home`);
+      expect(page.template()).toContain(`Medical History`);
     });
   });
 
