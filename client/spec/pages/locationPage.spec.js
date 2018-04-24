@@ -10,19 +10,18 @@ describe('LocationPage', () => {
   describe('#template', () => {
     it('should have a template', () => {
       const page = new LocationPage();
-      expect(page.template()).toContain("<h1>Current Location</h1>");
+      expect(page.template()).toContain("<h1>Your location is</h1>");
     });
   });
 
   describe('#template', () => {
     it('should have a template that displays the current location', () => {
-      const props = { location: '50 Carrington St'};
-      const page = new LocationPage(props);
-      expect(page.template()).toContain("<h2>50 Carrington St</h2>");
+      const page = new LocationPage();
+      expect(page.template()).toContain("<h1>50 Carrington St, NSW 2000</h1>");
     });
   });
 
-  describe('#rightButtonEvent', () => {
+  describe('#topButtonEvent', () => {
     it('goes to root page', () => {
       const props = {
         navigate: () => { },
@@ -30,7 +29,7 @@ describe('LocationPage', () => {
       const page = new LocationPage(props);
       spyOn(page, 'navigate');
 
-      page.rightButtonEvent();
+      page.topButtonEvent();
       expect(page.navigate).toHaveBeenCalledWith('/');
     });
   });

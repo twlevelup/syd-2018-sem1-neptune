@@ -4,11 +4,6 @@ const compiledTemplate = require('../../templates/locationPage.hbs')
 
 class LocationPage extends BasePage {
 
-  faceButtonEvent() {
-    this.navigate('location', { 
-      location: "50 Carrington St" });
-  }
-
   template() {
     const context = {
       location: this.props.location,
@@ -16,11 +11,9 @@ class LocationPage extends BasePage {
     return compiledTemplate(context);
   }
 
-  rightButtonEvent() {
+  topButtonEvent() {
     this.navigate('/');
   }
-
-
 
 }
   
