@@ -1,5 +1,6 @@
 const LocationPage = require('../../src/js/pages/locationPage');
-describe('ContactsPage', () => {
+
+describe('LocationPage', () => {
   let watchFace;
   beforeEach(() => {
     document.body.innerHTML = `<div id='watch-face' style='height: 100px; width: 100px;'></div>`;
@@ -9,11 +10,18 @@ describe('ContactsPage', () => {
   describe('#template', () => {
     it('should have a template', () => {
       const page = new LocationPage();
-      expect(page.template()).toContain("<h1>Current Location</h1>");
+      expect(page.template()).toContain("<h1>Your location is</h1>");
     });
   });
 
-  describe('#rightButtonEvent', () => {
+  describe('#template', () => {
+    it('should have a template that displays the current location', () => {
+      const page = new LocationPage();
+      expect(page.template()).toContain("<h1>50 Carrington St, NSW 2000</h1>");
+    });
+  });
+
+  describe('#topButtonEvent', () => {
     it('goes to root page', () => {
       const props = {
         navigate: () => { },
@@ -21,7 +29,7 @@ describe('ContactsPage', () => {
       const page = new LocationPage(props);
       spyOn(page, 'navigate');
 
-      page.rightButtonEvent();
+      page.topButtonEvent();
       expect(page.navigate).toHaveBeenCalledWith('/');
     });
   });
