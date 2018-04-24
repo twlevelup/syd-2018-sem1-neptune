@@ -5,31 +5,46 @@
 .introMiddle {
     position: absolute;
     justify-self: center;
-    top: 8vh;
-    left: 3vw;
+    top: 50%;
+    left: 50%;
+    margin-left: -56px;
+    margin-top: -54px;
+    width: 140px;
+    font-size: 14px;
 }
 
 .introTop {
     position: absolute;
-    justify-self: center;
-    text-align: center;
-    top: -3vh;
-    left: 16vw;
+    top: 50%;
+    left: 50%;
+    margin-left: -17px;
+    margin-top: -132px;
+    font-size: 10px;
 }
 
 .introRight {
     position: absolute;
-    transform: rotate(-90deg);
-    justify-self: center;
+    transform: rotate(-270deg);
     text-align: center;
-    top: 13vh;
-    left: 29vw;
+    margin-top: 93px;
+    margin-left: 200px;
+    font-size: 10px;
+}
+
+.introLeft {
+    position: absolute;
+    transform: rotate(-90deg);
+    text-align: center;
+    margin-top: 100px;
+    margin-left: -20px;
+    font-size: 10px;
 }
 
 .introBottom {
     position: absolute;
-    justify-self: center;
-    text-align: center;
-    top: 32vh;
-    left: 13vw;
+    top: 50%;
+    left: 50%;
+    margin-left: -32px;
+    margin-top: 98px;
+    font-size: 10px;
 }

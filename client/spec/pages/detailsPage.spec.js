@@ -14,7 +14,7 @@ describe('The Details Page', () => {
       expect(page.template()).toContain(`Your D.O.B.: 14/02/1957`);
       expect(page.template()).toContain(`Your Address: 123 Pet Street`);
       expect(page.template()).toContain(`Home`);
-      expect(page.template()).toContain(`Medical History`);
+      expect(page.template()).toContain(`Medical ID`);
     });
   });
 

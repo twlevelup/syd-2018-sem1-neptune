@@ -14,6 +14,10 @@ class DetailsPage extends BasePage {
   rightButtonEvent() {
     this.navigate('/medicalHistory');
   }
+
+  leftButtonEvent() {
+    this.navigate('intro');
+  }
 }
 
 module.exports = DetailsPage;
