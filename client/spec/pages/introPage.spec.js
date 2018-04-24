@@ -46,4 +46,20 @@ describe('The Intro Page', () => {
     });
   });
 
+    describe('#rightButtonEvent', () => {
+        it('should take the user to carers contact details page', () => {
+            const props = {
+                navigate: () => {},
+            }
+
+
+            const page = new IntroPage(props);
+            spyOn(page, 'navigate');
+
+            page.rightButtonEvent();
+            expect(page.navigate).toHaveBeenCalledWith('emergencyContacts');
+
+       });
+    });
+
 });
