@@ -12,7 +12,7 @@ class DetailsPage extends BasePage {
   }
 
   rightButtonEvent() {
-    this.navigate('/medicalHistory');
+    this.navigate('medical');
   }
 
   leftButtonEvent() {

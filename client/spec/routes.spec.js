@@ -9,7 +9,8 @@ describe('routes', () => {
     expect(routes['404']).toBeDefined();
     expect(routes['intro']).toBeDefined();
     expect(routes['details']).toBeDefined();
-    // expect(routes['medicalHistory']).toBeDefined();
+    expect(routes['medical']).toBeDefined();
+    expect(routes['medication']).toBeDefined();
     expect(routes['emergencyContacts']).toBeDefined();
     // expect(routes['emergencyMore']).toBeDefined();
     expect(routes['location']).toBeDefined();

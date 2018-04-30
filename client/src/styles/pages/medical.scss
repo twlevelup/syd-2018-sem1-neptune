@@ -1,0 +1,41 @@
+.medicalContainer {
+    position: relative;
+}
+
+.medicalMiddle {
+    position: absolute;
+    justify-self: center;
+    top: 50%;
+    left: 50%;
+    margin-left: -80px;
+    margin-top: 40px;
+    width: 150px;
+    font-size: 14px;
+}
+
+.medicalTop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -27px;
+    margin-top: -13px;
+    font-size: 10px;
+}
+
+.medicalRight {
+    position: absolute;
+    transform: rotate(-270deg);
+    text-align: center;
+    margin-top: 93px;
+    margin-left: 200px;
+    font-size: 10px;
+}
+
+.medicalLeft {
+    position: absolute;
+    transform: rotate(-90deg);
+    text-align: center;
+    margin-top: 100px;
+    margin-left: -20px;
+    font-size: 10px;
+}
