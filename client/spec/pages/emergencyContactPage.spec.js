@@ -20,7 +20,7 @@ describe('The Emergency Contacts Page', () => {
         navigate: () => { },
       };
 
-      const page = new EmergencyContacysPage(props);
+      const page = new EmergencyContactsPage(props);
       spyOn(page, 'navigate');
 
       page.topButtonEvent();
