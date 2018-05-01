@@ -9,6 +9,7 @@ const RelativeContactDetailsPage = require('./pages/relativeContactDetailsPage')
 const LocationPage = require('./pages/locationPage');
 const MedicalPage = require('./pages/medicalPage');
 const MedicationPage = require('./pages/medicationPage');
+const EmergencyServicesPage = require('./pages/emergencyServicesPage');
 
 module.exports = {
   '/': HomePage,
@@ -21,5 +22,6 @@ module.exports = {
   'relativeContactDetails': RelativeContactDetailsPage,
   'location': LocationPage,
   'medical': MedicalPage,
-  'medication': MedicationPage
+  'medication': MedicationPage,
+  'emergencyServices': EmergencyServicesPage
 };

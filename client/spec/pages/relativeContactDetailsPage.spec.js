@@ -46,4 +46,18 @@ describe('The Relative Contacts Page', () => {
       expect(page.navigate).toHaveBeenCalledWith('carerContact');
     });
   });
+
+  describe('#rightButtonEvent', () => {
+    it('should take the user to the emergency contact details page', () => {
+      const props = {
+        navigate: () => { },
+      };
+
+      const page = new RelativeContactDetailsPage(props);
+      spyOn(page, 'navigate');
+
+      page.rightButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('emergencyServices');
+    });
+  });
 });
