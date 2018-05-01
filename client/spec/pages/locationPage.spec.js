@@ -10,16 +10,23 @@ describe('LocationPage', () => {
   describe('#template', () => {
     it('should have a template', () => {
       const page = new LocationPage();
-      expect(page.template()).toContain("<h1>Your location is</h1>");
+      expect(page.template()).toContain("Your location is");
     });
   });
 
   describe('#template', () => {
     it('should have a template that displays the current location', () => {
       const page = new LocationPage();
-      expect(page.template()).toContain("<h1>50 Carrington St, NSW 2000</h1>");
+      expect(page.template()).toContain("50 Carrington St, Sydney NSW 2000");
     });
-  });
+  }); 
+
+  describe('#template', () => {
+    it('should have a template that displays the a \'Home\' button', () => {
+      const page = new LocationPage();
+      expect(page.template()).toContain("Home");
+    });
+  }); 
 
   describe('#topButtonEvent', () => {
     it('goes to root page', () => {
