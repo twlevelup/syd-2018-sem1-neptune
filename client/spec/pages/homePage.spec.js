@@ -53,8 +53,13 @@ describe("HomePage", () => {
       const page = new HomePage(props);
       spyOn(page, "navigate");
 
+<<<<<<< Updated upstream
       page.topButtonEvent();
       expect(page.navigate).not.toHaveBeenCalled();
+=======
+      page.rightButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith("quotes");
+>>>>>>> Stashed changes
     });
   });
 

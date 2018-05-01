@@ -15,6 +15,7 @@ describe('routes', () => {
     expect(routes['relativeContactDetails']).toBeDefined();
     expect(routes['location']).toBeDefined();
     expect(routes['location']).toBeDefined();
+    expect(routes['quotes']).toBeDefined();
   });
 
 });
