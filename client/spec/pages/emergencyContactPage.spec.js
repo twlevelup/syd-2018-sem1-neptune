@@ -8,9 +8,14 @@ describe('The Emergency Contacts Page', () => {
   });
 
   describe('#template', () => {
-    it('should contain the correct text', () => {
+    it('should contain the carer\'s name', () => {
       const page = new EmergencyContactsPage();
       expect(page.template()).toContain(`Carer:`);
+    });
+
+    it('should contain the carer\'s mobile', () => {
+      const page = new EmergencyContactsPage();
+      expect(page.template()).toContain(`Mobile:`);
     });
   });
 
