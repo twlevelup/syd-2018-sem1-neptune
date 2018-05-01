@@ -46,20 +46,34 @@ describe('The Intro Page', () => {
     });
   });
 
-    describe('#rightButtonEvent', () => {
-        it('should take the user to carers contact details page', () => {
-            const props = {
-                navigate: () => {},
-            }
+  describe('#rightButtonEvent', () => {
+      it('should take the user to carers contact details page', () => {
+          const props = {
+              navigate: () => {},
+          }
 
 
-            const page = new IntroPage(props);
-            spyOn(page, 'navigate');
+          const page = new IntroPage(props);
+          spyOn(page, 'navigate');
 
-            page.rightButtonEvent();
-            expect(page.navigate).toHaveBeenCalledWith('emergencyContacts');
+          page.rightButtonEvent();
+          expect(page.navigate).toHaveBeenCalledWith('emergencyContacts');
 
-       });
+      });
+  });
+
+  describe('#leftButtonEvent', () => {
+    it('should take the user to the previous page', () => {
+      const props = {
+        navigate: () => { },
+      };
+
+      const page = new IntroPage(props);
+      spyOn(page, 'navigate');
+
+      page.leftButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('/');
     });
+  });
 
 });

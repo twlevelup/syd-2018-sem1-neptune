@@ -18,6 +18,10 @@ class IntroPage extends BasePage {
   rightButtonEvent() {
     this.navigate('emergencyContacts');
   }
+
+  leftButtonEvent() {
+    this.navigate('/');
+  }
 }
 
 module.exports = IntroPage;
