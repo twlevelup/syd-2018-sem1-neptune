@@ -32,4 +32,18 @@ describe('The Carer Contacts Page', () => {
       expect(page.navigate).toHaveBeenCalledWith('/');
     });
   });
+
+  describe('#rightButtonEvent', () => {
+    it('should take the user to the relative contact details page', () => {
+      const props = {
+        navigate: () => { },
+      };
+
+      const page = new CarerContactPage(props);
+      spyOn(page, 'navigate');
+
+      page.rightButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('relativeContactDetails');
+    });
+  });
 });

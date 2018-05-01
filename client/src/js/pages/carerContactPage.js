@@ -16,7 +16,7 @@ class CarerContactPage extends BasePage {
   }
 
   rightButtonEvent() {
-    this.navigate('emergencyMore');
+    this.navigate('relativeContactDetails');
   }
 }
 
