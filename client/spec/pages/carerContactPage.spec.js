@@ -1,6 +1,6 @@
-const EmergencyContactsPage = require('../../src/js/pages/emergencyContactsPage');
+const CarerContactPage = require('../../src/js/pages/carerContactPage');
 
-describe('The Emergency Contacts Page', () => {
+describe('The Carer Contacts Page', () => {
   let watchFace;
   beforeEach(() => {
     document.body.innerHTML = `<div id='watch-face' style='height: 100px; width: 100px;'></div>`;
@@ -9,12 +9,12 @@ describe('The Emergency Contacts Page', () => {
 
   describe('#template', () => {
     it('should contain the carer\'s name', () => {
-      const page = new EmergencyContactsPage();
+      const page = new CarerContactPage();
       expect(page.template()).toContain(`Carer:`);
     });
 
     it('should contain the carer\'s mobile', () => {
-      const page = new EmergencyContactsPage();
+      const page = new CarerContactPage();
       expect(page.template()).toContain(`Mobile:`);
     });
   });
@@ -25,7 +25,7 @@ describe('The Emergency Contacts Page', () => {
         navigate: () => { },
       };
 
-      const page = new EmergencyContactsPage(props);
+      const page = new CarerContactPage(props);
       spyOn(page, 'navigate');
 
       page.topButtonEvent();

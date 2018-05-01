@@ -4,7 +4,7 @@ const TeamPage = require('./pages/teamPage');
 const FourOhFour = require('./pages/404Page');
 const IntroPage = require('./pages/introPage');
 const DetailsPage = require('./pages/detailsPage');
-const EmergencyContactsPage = require('./pages/emergencyContactsPage');
+const CarerContactPage = require('./pages/carerContactPage');
 const LocationPage = require('./pages/locationPage');
 const MedicalPage = require('./pages/medicalPage');
 const MedicationPage = require('./pages/medicationPage');
@@ -16,7 +16,7 @@ module.exports = {
   '404': FourOhFour,
   'intro': IntroPage,
   'details': DetailsPage,
-  'emergencyContacts': EmergencyContactsPage,
+  'carerContact': CarerContactPage,
   'location': LocationPage,
   'medical': MedicalPage,
   'medication': MedicationPage

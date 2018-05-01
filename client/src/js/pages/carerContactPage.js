@@ -1,8 +1,8 @@
-require('../../styles/pages/emergencyContacts.scss');
+require('../../styles/pages/carerContact.scss');
 const BasePage = require('watch-framework').BasePage;
-const compiledTemplate = require('../../templates/emergencyContactsPage.hbs')
+const compiledTemplate = require('../../templates/carerContactPage.hbs')
 
-class EmergencyContactsPage extends BasePage {
+class CarerContactPage extends BasePage {
   template() {
     return compiledTemplate();
   }
@@ -20,4 +20,4 @@ class EmergencyContactsPage extends BasePage {
   }
 }
 
-module.exports = EmergencyContactsPage;
+module.exports = CarerContactPage;

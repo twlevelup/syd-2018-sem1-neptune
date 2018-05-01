@@ -11,7 +11,7 @@ describe('routes', () => {
     expect(routes['details']).toBeDefined();
     expect(routes['medical']).toBeDefined();
     expect(routes['medication']).toBeDefined();
-    expect(routes['emergencyContacts']).toBeDefined();
+    expect(routes['carerContact']).toBeDefined();
     // expect(routes['emergencyMore']).toBeDefined();
     expect(routes['location']).toBeDefined();
   });

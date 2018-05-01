@@ -57,7 +57,7 @@ describe('The Intro Page', () => {
           spyOn(page, 'navigate');
 
           page.rightButtonEvent();
-          expect(page.navigate).toHaveBeenCalledWith('emergencyContacts');
+          expect(page.navigate).toHaveBeenCalledWith('carerContact');
 
       });
   });

@@ -16,7 +16,7 @@ class IntroPage extends BasePage {
   }
 
   rightButtonEvent() {
-    this.navigate('emergencyContacts');
+    this.navigate('carerContact');
   }
 
   leftButtonEvent() {
