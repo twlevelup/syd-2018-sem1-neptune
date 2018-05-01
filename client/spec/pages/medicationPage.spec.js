@@ -10,7 +10,9 @@ describe('The Medication Page', () => {
   describe('#template', () => {
     it('should contain the correct text', () => {
       const page = new MedicationPage();
-      expect(page.template()).toContain(`Medication:`);
+      expect(page.template()).toContain(`MEDICATION:`);
+      expect(page.template()).toContain(`OROXINE`);
+      expect(page.template()).toContain(`FLUTIFORM`);
     });
   });
 
