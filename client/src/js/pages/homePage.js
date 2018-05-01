@@ -5,13 +5,15 @@ const logo = require('../../images/logo.png')
 const time = new Date(Date.now()).toLocaleString('en-AEST', { hour12: true }).split(",")[1];
 const compiledTemplate = require("../../templates/homePage.hbs");
 
+
 class HomePage extends BasePage {
   template() {
     const context = {
       time: time,
-      rightButtonLabel: 'Next',
-      bottomButtonLabel: 'My Details',
+      rightButtonLabel: 'Happy Thoughts',
+      bottomButtonLabel: 'Need help?',
       leftButtonLabel: 'Location',
+      quote: "What you believe you can achieve",
     };
     return compiledTemplate(context);
   }
@@ -21,7 +23,6 @@ class HomePage extends BasePage {
   }
 
   rightButtonEvent() {
-    this.navigate('contacts');
   }
 
   topButtonEvent() {

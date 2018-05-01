@@ -11,9 +11,13 @@ describe("HomePage", () => {
   describe("#template", () => {
     it("should have a template", () => {
       const page = new HomePage();
+<<<<<<< HEAD
       expect(page.template()).toContain(
         '<div>"What you believe you can achieve"</div>'
       );
+=======
+      expect(page.template()).toContain("</div>");
+>>>>>>> Darshan/Natalia Homescreen with time on top, quote at the center with buttons to navigate
     });
   });
 
@@ -23,17 +27,17 @@ describe("HomePage", () => {
     it("goes to alert page", () => {
 =======
   describe('#buttonLabels', () => {
-    it('should say Next for right button', () => {
+    it('should say Happy Thoughts for right button', () => {
       const page = new HomePage();
-      expect(page.template()).toContain("<div>Next</div>");
+      expect(page.template()).toContain("Happy Thoughts");
     });
     it('should say My Details for bottom button', () => {
       const page = new HomePage();
-      expect(page.template()).toContain("<div class=\"bottom-button\">My Details</div>");
+      expect(page.template()).toContain("<div class=\"bottom-button\">Need help?</div>");
     });
     it('should say Location for left button', () => {
       const page = new HomePage();
-      expect(page.template()).toContain("<div>Location</div>");
+      expect(page.template()).toContain("Location");
     });
   });
   
@@ -66,16 +70,24 @@ describe("HomePage", () => {
     });
   });
 
+<<<<<<< HEAD
   describe("#rightButtonEvent", () => {
     it("goes to contacts page", () => {
+=======
+  describe('#rightButtonEvent', () => {
+    it('changes the quote', () => {
+>>>>>>> Darshan/Natalia Homescreen with time on top, quote at the center with buttons to navigate
       const props = {
         navigate: () => {}
       };
       const page = new HomePage(props);
+<<<<<<< HEAD
       spyOn(page, "navigate");
 
       page.rightButtonEvent();
       expect(page.navigate).toHaveBeenCalledWith("contacts");
+=======
+>>>>>>> Darshan/Natalia Homescreen with time on top, quote at the center with buttons to navigate
     });
   });
 
