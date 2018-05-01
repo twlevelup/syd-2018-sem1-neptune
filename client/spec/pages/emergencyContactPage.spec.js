@@ -10,7 +10,7 @@ describe('The Emergency Contacts Page', () => {
   describe('#template', () => {
     it('should contain the correct text', () => {
       const page = new EmergencyContactsPage();
-      expect(page.template()).toContain(`<div class="middle"><p>Carer: James McArthur</p><p>Mobile: </p></div>`);
+      expect(page.template()).toContain(`Carer:`);
     });
   });
 
