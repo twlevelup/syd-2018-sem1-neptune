@@ -12,7 +12,7 @@ class HomePage extends BasePage {
       time: time,
       rightButtonLabel: 'Happy Thoughts',
       bottomButtonLabel: 'Need help?',
-      leftButtonLabel: 'Location',
+      leftButtonLabel: 'My Location',
       quote: "What you believe you can achieve",
     };
     return compiledTemplate(context);

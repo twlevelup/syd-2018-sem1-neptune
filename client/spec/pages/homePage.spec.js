@@ -11,21 +11,12 @@ describe("HomePage", () => {
   describe("#template", () => {
     it("should have a template", () => {
       const page = new HomePage();
-<<<<<<< HEAD
       expect(page.template()).toContain(
-        '<div>"What you believe you can achieve"</div>'
+        '<div>What you believe you can achieve</div>'
       );
-=======
-      expect(page.template()).toContain("</div>");
->>>>>>> Darshan/Natalia Homescreen with time on top, quote at the center with buttons to navigate
     });
   });
 
-<<<<<<< HEAD
-
-  describe("#topButtonEvent", () => {
-    it("goes to alert page", () => {
-=======
   describe('#buttonLabels', () => {
     it('should say Happy Thoughts for right button', () => {
       const page = new HomePage();
@@ -37,25 +28,9 @@ describe("HomePage", () => {
     });
     it('should say Location for left button', () => {
       const page = new HomePage();
-      expect(page.template()).toContain("Location");
+      expect(page.template()).toContain("My Location");
     });
   });
-  
-
-  describe('#leftButtonEvent', () => {
-    it('goes to location page', () => {
->>>>>>> Katrina/Darshan Adding homeScreen button labels
-      const props = {
-        navigate: () => {}
-      };
-      const page = new HomePage(props);
-      spyOn(page, "navigate");
-
-      page.topButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith("alert");
-    });
-  });
-
 
   describe("#leftButtonEvent", () => {
     it("goes to location page", () => {
@@ -67,27 +42,6 @@ describe("HomePage", () => {
 
       page.leftButtonEvent();
       expect(page.navigate).toHaveBeenCalledWith("location");
-    });
-  });
-
-<<<<<<< HEAD
-  describe("#rightButtonEvent", () => {
-    it("goes to contacts page", () => {
-=======
-  describe('#rightButtonEvent', () => {
-    it('changes the quote', () => {
->>>>>>> Darshan/Natalia Homescreen with time on top, quote at the center with buttons to navigate
-      const props = {
-        navigate: () => {}
-      };
-      const page = new HomePage(props);
-<<<<<<< HEAD
-      spyOn(page, "navigate");
-
-      page.rightButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith("contacts");
-=======
->>>>>>> Darshan/Natalia Homescreen with time on top, quote at the center with buttons to navigate
     });
   });
 
