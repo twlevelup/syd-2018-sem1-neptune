@@ -26,7 +26,6 @@ class HomePage extends BasePage {
   }
 
   topButtonEvent() {
-    this.navigate('alert');
   }
 
   bottomButtonEvent() {

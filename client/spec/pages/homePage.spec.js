@@ -45,6 +45,19 @@ describe("HomePage", () => {
     });
   });
 
+  describe("#topButtonEvent", () => {
+    it("doesn't do anything", () => {
+      const props = {
+        navigate: () => {}
+      };
+      const page = new HomePage(props);
+      spyOn(page, "navigate");
+
+      page.topButtonEvent();
+      expect(page.navigate).not.toHaveBeenCalled();
+    });
+  });
+
   describe("#bottomButtonEvent", () => {
     it("should take the user to the intro page", () => {
       const props = {
