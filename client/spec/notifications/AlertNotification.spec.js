@@ -6,7 +6,11 @@ describe("AlertNotification", () => {
   describe("#template", () => {
     it("should have a template", () => {
       const notification = new AlertNotification();
-      expect(notification.template()).toContain("Alert");
+      expect(notification.template()).toContain("Reminder!");
+    });
+    it("should remind the patient to take their medicine", () => {
+      const notification = new AlertNotification();
+      expect(notification.template()).toContain("It is time to take your medication:");
     });
   });
 
