@@ -1,41 +1,37 @@
-.emergencyContactsContainer {
+.carerContactContainer {
     position: relative;
 }
 
-.middle {
+.carerMiddle {
     position: absolute;
     justify-self: center;
-    top: 50%;
-    left: 50%;
-    margin-left: -44px;
-    margin-top: -69px;
-    width: 120px;
+    margin-left: 48px;
+    margin-top: 54px;
+    width: 155px;
     font-size: 14px;
 }
 
-.top-btn {
+.carerTop-btn {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -17px;
-    margin-top: -133px;
+    margin-left: 94px;
+    margin-top: -11px;
     font-size: 10px;
 }
 
-.right-btn {
+.carerRight-btn {
     position: absolute;
     transform: rotate(-270deg);
     text-align: center;
-    margin-top: 93px;
-    margin-left: 200px;
+    margin-top: 100px;
+    margin-left: 220px;
     font-size: 10px;
 }
 
-.left-btn {
+.carerLeft-btn {
     position: absolute;
     transform: rotate(-90deg);
     text-align: center;
     margin-top: 100px;
-    margin-left: -20px;
+    margin-left: -25px;
     font-size: 10px;
 }

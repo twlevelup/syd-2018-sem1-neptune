@@ -1,33 +1,24 @@
-.relativeContactContainer {
+.emergencyServicesContainer {
     position: relative;
 }
 
-.relativeMiddle {
+.emergencyServicesMiddle {
     position: absolute;
     justify-self: center;
-    margin-left: 20px;
-    margin-top: 50px;
-    width: 215px;
+    margin-left: 40px;
+    margin-top: 60px;
+    width: 170px;
     font-size: 14px;
 }
 
-.relativeTop-btn {
+.emergencyServicesTop-btn {
     position: absolute;
     margin-left: 95px;
     margin-top: -10px;
     font-size: 10px;
 }
 
-.relativeRight-btn {
-    position: absolute;
-    transform: rotate(-270deg);
-    text-align: center;
-    margin-top: 100px;
-    margin-left: 220px;
-    font-size: 10px;
-}
-
-.relativeLeft-btn {
+.emergencyServicesLeft-btn {
     position: absolute;
     transform: rotate(-90deg);
     text-align: center;

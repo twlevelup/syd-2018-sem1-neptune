@@ -10,8 +10,8 @@ describe('The Emergency Service Page', () => {
   describe('#template', () => {
     it('should contain the correct text', () => {
       const page = new EmergencyServicesPage();
-      expect(page.template()).toContain(`<p>Police: 000</p>`);
-      expect(page.template()).toContain(`<p>Hospital: 0292617777</p>`);
+      expect(page.template()).toContain(`Police: 000`);
+      expect(page.template()).toContain(`Hospital: 0292617777`);
     });
 });
 });

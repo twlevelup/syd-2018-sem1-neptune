@@ -23,10 +23,7 @@ class HomePage extends BasePage {
   }
 
   rightButtonEvent() {
-<<<<<<< Updated upstream
-=======
     this.navigate('quotes');
->>>>>>> Stashed changes
   }
 
   topButtonEvent() {

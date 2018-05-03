@@ -9,11 +9,8 @@ const RelativeContactDetailsPage = require('./pages/relativeContactDetailsPage')
 const LocationPage = require('./pages/locationPage');
 const MedicalPage = require('./pages/medicalPage');
 const MedicationPage = require('./pages/medicationPage');
-<<<<<<< Updated upstream
 const EmergencyServicesPage = require('./pages/emergencyServicesPage');
-=======
 const QuotesPage = require('./pages/quotesPage');
->>>>>>> Stashed changes
 
 module.exports = {
   '/': HomePage,
@@ -27,9 +24,6 @@ module.exports = {
   'location': LocationPage,
   'medical': MedicalPage,
   'medication': MedicationPage,
-<<<<<<< Updated upstream
-  'emergencyServices': EmergencyServicesPage
-=======
+  'emergencyServices': EmergencyServicesPage,
   'quotes': QuotesPage
->>>>>>> Stashed changes
 };
