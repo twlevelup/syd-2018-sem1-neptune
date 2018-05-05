@@ -1,3 +1,6 @@
+
+require('../../styles/pages/reminders.scss');
+
 const BasePage = require('watch-framework').BasePage;
 const compiledTemplate = require('../../templates/reminderPage.hbs')
 
