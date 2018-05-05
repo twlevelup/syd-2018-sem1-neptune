@@ -10,7 +10,8 @@ describe('The Carer Contacts Page', () => {
   describe('#template', () => {
     it('should contain the carer\'s name', () => {
       const page = new CarerContactPage();
-      expect(page.template()).toContain(`Carer:`);
+      expect(page.template()).toContain(`Your Carer's name: James Grant`);
+      expect(page.template()).toContain(`Your Carer's Mobile: 0432 141 567`);
     });
 
     it('should contain the carer\'s mobile', () => {
