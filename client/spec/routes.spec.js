@@ -16,6 +16,8 @@ describe('routes', () => {
     expect(routes['location']).toBeDefined();
     expect(routes['quotes']).toBeDefined();
     expect(routes['quotesTwo']).toBeDefined();
+    expect(routes['quotesThree']).toBeDefined();
+    expect(routes['reminder']).toBeDefined();
   });
 
 });

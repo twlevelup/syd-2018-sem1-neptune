@@ -1,4 +1,6 @@
 const AlertNotification = require('./notifications/AlertNotification');
+const ReminderNotification = require('./notifications/ReminderNotification');
+
 
 const notifications = [   
   {
@@ -11,7 +13,13 @@ const notifications = [
     type: "base",
     label: "Base",
     defaultValue: "This is a test hello notification",
-  }
+  },
+  {
+    type: "reminder",
+    label: "Reminder",
+    defaultValue: "",
+    view: ReminderNotification,
+  },
 ];
 
 module.exports = notifications;

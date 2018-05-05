@@ -46,7 +46,7 @@ describe("HomePage", () => {
   });
 
   describe("#topButtonEvent", () => {
-    it("doesn't do anything", () => {
+    it("should take user to the reminder page", () => {
       const props = {
         navigate: () => {}
       };
@@ -54,7 +54,7 @@ describe("HomePage", () => {
       spyOn(page, "navigate");
 
       page.topButtonEvent();
-      expect(page.navigate).not.toHaveBeenCalled();
+      expect(page.navigate).toHaveBeenCalledWith("reminder");
     });
   });
 

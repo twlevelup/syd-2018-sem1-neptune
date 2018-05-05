@@ -27,6 +27,7 @@ class HomePage extends BasePage {
   }
 
   topButtonEvent() {
+    this.navigate('reminder')
   }
 
   bottomButtonEvent() {
