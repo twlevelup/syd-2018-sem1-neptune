@@ -1,9 +1,10 @@
 const BasePage = require('./BasePage');
 const NotificationHub = require('../PublicNotificationHub');
-
 const compiledTemplate = require('../templates/baseNotification.hbs')
+
 class BaseNotification extends BasePage {
   template() {
+    console.log(this.props);
     return compiledTemplate(this.props);
   }
   leftButtonEvent() {

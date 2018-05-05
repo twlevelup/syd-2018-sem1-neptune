@@ -1,6 +1,6 @@
 const AlertNotification = require('./notifications/AlertNotification');
 
-const notifications = [ 
+const notifications = [   
   {
     type: "medAlert",
     label: "Medication",
