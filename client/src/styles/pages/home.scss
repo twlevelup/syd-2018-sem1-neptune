@@ -1,26 +1,47 @@
-#home {
-  font-style: italic;
-  display: flex;
-  flex-direction: column;
-  height: 240px;
-  justify-content: space-between;
-  margin-left: -1.5em;
-  text-align: center;
+.homePageContainer{
+  position: relative;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
+.row{
+  position: absolute;
+  justify-self: center;
+  top: 60%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: 40px;
+  width: 120px;
+  font-size:14px;  
+}
+
+#time{
+  text-align: center; 
 }
 
 .bottom-button {
   text-align: center;
 }
 
-#rightButton {
-  transform: rotate(-90deg);
+.right-btn{
+  position: absolute;
+  transform: rotate(-270deg);
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 200px;
+  font-size: 10px; 
 }
 
-#leftButton {
-  transform: rotate(90deg);
+.left-btn {
+  position: absolute;
+  transform: rotate(-90deg);
+  text-align: center;
+  margin-top: 50px;
+  margin-left: -45px;
+  font-size: 10px; 
+}
+
+.bottom-button{
+  position: absolute;
+  margin-left: 80px;
+  margin-top: 155px;
+  font-size: 10px;
 }
