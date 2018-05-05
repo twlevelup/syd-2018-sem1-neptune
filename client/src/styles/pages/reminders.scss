@@ -1,3 +1,22 @@
 div {
-    color: black
+    color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+.quotesTop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -27px;
+    margin-top: -60px;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.quotesContainer {
+    position: relative;
+    color: black;
 }
