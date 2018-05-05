@@ -1,3 +1,5 @@
+require('../../styles/pages/remindersNotification.scss');
+
 const BaseNotification = require("watch-framework").BaseNotification;
 const NotificationHub = require("watch-framework").NotificationHub;
 const compiledTemplate = require("../../templates/ReminderNotification.hbs");

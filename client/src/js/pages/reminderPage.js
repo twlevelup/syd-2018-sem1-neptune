@@ -1,4 +1,3 @@
-
 require('../../styles/pages/reminders.scss');
 
 const BasePage = require('watch-framework').BasePage;
