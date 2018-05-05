@@ -1,6 +1,6 @@
-const QuotesPage = require('../../src/js/pages/quotesPage');
+const QuotesTwoPage = require('../../src/js/pages/quotesThreePage');
 
-describe('The Quotes Page', () => {
+describe('The Quotes Three Page', () => {
   let watchFace;
   beforeEach(() => {
     document.body.innerHTML = `<div id='watch-face' style='height: 100px; width: 100px;'></div>`;
@@ -9,10 +9,9 @@ describe('The Quotes Page', () => {
 
   describe('#template', () => {
     it('should contain the correct text', () => {
-      const page = new QuotesPage();
-      expect(page.template()).toContain(`I only look back to see how far I've come.`);
+      const page = new QuotesTwoPage();
+      expect(page.template()).toContain(`A smooth sea never made a skillful sailor.`);
       expect(page.template()).toContain(`Home`);
-      expect(page.template()).toContain(`Next`);
       expect(page.template()).toContain(`Back`);
     });
   });
@@ -23,7 +22,7 @@ describe('The Quotes Page', () => {
         navigate: () => { },
       };
 
-      const page = new QuotesPage(props);
+      const page = new QuotesTwoPage(props);
       spyOn(page, 'navigate');
 
       page.topButtonEvent();
@@ -37,11 +36,11 @@ describe('The Quotes Page', () => {
         navigate: () => { },
       };
 
-      const page = new QuotesPage(props);
+      const page = new QuotesTwoPage(props);
       spyOn(page, 'navigate');
 
       page.leftButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('/');
+      expect(page.navigate).toHaveBeenCalledWith('quotesTwo');
     });
   });
 

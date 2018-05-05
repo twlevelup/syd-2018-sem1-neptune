@@ -11,6 +11,8 @@ const MedicalPage = require('./pages/medicalPage');
 const MedicationPage = require('./pages/medicationPage');
 const EmergencyServicesPage = require('./pages/emergencyServicesPage');
 const QuotesPage = require('./pages/quotesPage');
+const QuotesTwoPage = require('./pages/quotesTwoPage')
+const QuotesThreePage = require('./pages/quotesThreePage')
 
 module.exports = {
   '/': HomePage,
@@ -25,5 +27,7 @@ module.exports = {
   'medical': MedicalPage,
   'medication': MedicationPage,
   'emergencyServices': EmergencyServicesPage,
-  'quotes': QuotesPage
+  'quotes': QuotesPage,
+  'quotesTwo': QuotesTwoPage,
+  'quotesThree': QuotesThreePage
 };

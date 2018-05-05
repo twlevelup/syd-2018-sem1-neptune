@@ -11,9 +11,12 @@ class QuotesPage extends BasePage {
     this.navigate('/');
   }
 
-
   leftButtonEvent() {
     this.navigate('/');
+  }
+
+  rightButtonEvent() {
+    this.navigate('quotesTwo');
   }
 }
 

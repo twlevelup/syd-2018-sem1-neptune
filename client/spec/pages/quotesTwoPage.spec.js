@@ -1,6 +1,6 @@
-const QuotesPage = require('../../src/js/pages/quotesPage');
+const QuotesTwoPage = require('../../src/js/pages/quotesTwoPage');
 
-describe('The Quotes Page', () => {
+describe('The Quotes Two Page', () => {
   let watchFace;
   beforeEach(() => {
     document.body.innerHTML = `<div id='watch-face' style='height: 100px; width: 100px;'></div>`;
@@ -9,8 +9,8 @@ describe('The Quotes Page', () => {
 
   describe('#template', () => {
     it('should contain the correct text', () => {
-      const page = new QuotesPage();
-      expect(page.template()).toContain(`I only look back to see how far I've come.`);
+      const page = new QuotesTwoPage();
+      expect(page.template()).toContain(`Tough times never last, but tough people do.`);
       expect(page.template()).toContain(`Home`);
       expect(page.template()).toContain(`Next`);
       expect(page.template()).toContain(`Back`);
@@ -23,7 +23,7 @@ describe('The Quotes Page', () => {
         navigate: () => { },
       };
 
-      const page = new QuotesPage(props);
+      const page = new QuotesTwoPage(props);
       spyOn(page, 'navigate');
 
       page.topButtonEvent();
@@ -31,17 +31,31 @@ describe('The Quotes Page', () => {
     });
   });
 
+  describe('#rightButtonEvent', () => {
+    it('should take the user to the next quotes page', () => {
+      const props = {
+        navigate: () => { },
+      };
+
+      const page = new QuotesTwoPage(props);
+      spyOn(page, 'navigate');
+
+      page.rightButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('quotesThree');
+    });
+    });
+
   describe('#leftButtonEvent', () => {
     it('should take the user to the previous page', () => {
       const props = {
         navigate: () => { },
       };
 
-      const page = new QuotesPage(props);
+      const page = new QuotesTwoPage(props);
       spyOn(page, 'navigate');
 
       page.leftButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('/');
+      expect(page.navigate).toHaveBeenCalledWith('quotes');
     });
   });
 
